@@ -72,7 +72,7 @@ test('adds 10000 yen to equal 64 GPB', () =>
     expect(fromYenToPound(10000)).toBe(64));
 ```
 
-> As simple as that, everything has come to that~
+> As simple as that, I have come to that~
 
 _Thank you for reading,_
 
