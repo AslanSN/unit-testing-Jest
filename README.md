@@ -1,5 +1,7 @@
 # Unit testing with Jest
 
+## Received README
+
 ```
 Important: 💻  This exercise is interactive.
 Please follow the instructions.
@@ -37,3 +39,41 @@ We are going to be using the Jest library to build a program capable of converti
 | fromEuroToDollar  | Receives a Euro amount and returns equivalent amount in US Dollar     |
 | fromYenToPound    | Reveives a Yen amount and equivalent amount in England Pound          |
 
+# My work's README
+
+I just did the exercise creating three objects with the data needed registered.
+
+Ex.:
+```JavaScript
+let oneDollarIs = {
+    "JPY": 115.79,
+    "EUR": 0.88,
+    "GBP": 0.74,
+}
+```
+With very small `arrow functions` I made the three functions asked for:
+
+Ex.:
+
+```JavaScript
+const fromDollarToYen = (int) => int * oneDollarIs.JPY;
+const fromEuroToDollar = (int) => int * oneEuroIs.USD;
+const fromYenToPound = (int) => int * oneYenIs.GBP;
+```
+
+And finally the **tests**:
+
+```JavaScript
+test('adds 1 $ to equal 115.79 Yens', () => 
+    expect(fromDollarToYen(1)).toBe(115.79));
+test('adds 10 € to equal 12 $', () => 
+    expect(fromEuroToDollar(10)).toBe(12));
+test('adds 10000 yen to equal 64 GPB', () => 
+    expect(fromYenToPound(10000)).toBe(64));
+```
+
+> As simple as that, everything has come to that~
+
+_Thank you for reading,_
+
+_Aslan_
